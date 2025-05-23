@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h1>Color Detection</h1>
+    <div class="camera-container">
+        <video autoplay="true" id="videoElement" style="display: none"></video>
+        <canvas id="indicator"></canvas>
+    </div>
+    <div class="data">
+        <div class="code-result">
+            <ul>
+                <li id="rgba-result"></li>
+                <li id="hexcode-result"></li>
+            </ul>
+        </div>
+        <div class="color">
+            <h1>Click here to copy color code to clipboard!</h1>
+            <button class="color-result" id="color-result"></button>
+        </div>
+    </div>
+   
+    <script src="camera.js"></script>
+</body>
+
+
+</html>
